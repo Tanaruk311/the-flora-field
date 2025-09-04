@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome -->
+     <script src="https://kit.fontawesome.com/923c03d73b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- google font -->
+     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- Navbar -->
+
+   <nav class="text-white flex justify-between p-5 items-center  shadow-lg"
+   id="navbar"> 
+    <div class="ml-6">
+     <a href="/" class=" text-2xl font-bold">
+        <img src="./asset/logo.png"
+         alt="logo"
+         class="w-20">
+      </a>
+    <div class="mr-10 gap-10 hidden md:flex">
+      <a href="/">หน้าแรก</a>
+      <a href="/about">เกี่ยวกับเรา</a>
+      <a href="/contact">ติดต่อเรา</a>  
+    </div>
+    
+    
+
+    <!-- Hamberger button -->
+     <button id="menu-btn" class="block md:hidden mr-6 focus:outline-none text-2xl">
+       ☰
+     </button>
+   </nav> 
+
+ <!-- mobile menu (ซ่อน/โชว์ด้วย js) -->
+<div id="mobile-menu" class=
+"overflow-hidden max-h-0 transition-all duration-500 ease-in-out flex flex-col bg-blue-950 text-white space-y-5 text-center "> 
+  <a class="mt-5" href="/">Home</a>
+  <a href="">About</a>
+  <a  href="contact.html">Contact</a>
+</div>
+<nav id="breadcrumb" class="flex text-sm text-white justify-start p-5"></nav>
+
+<!-- bg -->
+<section>
+    <img src="/asset/bgnavbar.png" alt=""
+    class="w-full h-48">
+</section>
+
+<!-- Content -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-x-6 mx-4 p-8">
+ <!-- ฝั่งซ้าย: ข้อมูลการติดต่อ -->
+<div class="max-w-xl">
+  <span class="block text-blue-600 uppercase tracking-wide">Contact us</span>
+  <h1 class="text-3xl font-bold mb-4">ติดต่อเรา</h1>
+  <p class="text-gray-600 mb-6">
+    เลขที่ 22 ม.22 ต.ดอกไม้ อ.เมือง จ.กำแพงเพชร 62000
+  </p>
+
+  <div class="space-y-4 grid grid-cols-2">
+    <div>
+    <!-- โทร -->
+    <div class="flex items-center gap-3">
+      <i class="fa-solid fa-phone bg-blue-950 text-white p-2 rounded-full"></i>
+      <div>
+        <h2 class="font-semibold">โทร</h2>
+        <p>092-222-2224</p>
+      </div>
+    </div>
+
+    <!-- Instagram -->
+    <div class="flex items-center gap-3">
+      <i class="fa-brands fa-instagram bg-blue-950 text-white p-2 rounded-full"></i>
+      <div>
+        <h2 class="font-semibold">Instagram</h2>
+        <p>_Theflorafield</p>
+      </div>
+    </div>
+
+    <!-- Facebook -->
+    <div class="flex items-center gap-3">
+      <i class="fa-brands fa-facebook bg-blue-950 text-white p-2 rounded-full"></i>
+      <div>
+        <h2 class="font-semibold">Facebook</h2>
+        <p>Theflorafield</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <img src="/asset/qrcode.png" alt="qrcode"
+    class="w-36 h-36">
+  </div>
+
+</div>
+
+</div>
+
+  <!-- ฝั่งขวา: Google Map -->
+  <div class="w-full ">
+    <h2 class="text-xl font-bold mb-3">แผนที่</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.9325183795733!2d100.5018!3d13.7563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2993a0c02b!2sBangkok!5e0!3m2!1sth!2sth!4v1614652999999!5m2!1sth!2sth" 
+      width="100%" 
+      height="300" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"
+      class="shadow-lg rounded-md ">
+    </iframe>
+  </div>
+
+</section>
+
+
+<!-- Footer -->
+   <footer class="text-white py-6 text-center">
+      <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+
+<script src="./script.js"></script>
+<script src="./breadcrum.js"></script>    
+</body>
+</html>

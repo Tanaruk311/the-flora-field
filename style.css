@@ -1,0 +1,29 @@
+:root{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+nav {
+    background:#1C2440;
+}
+
+#hero-section {
+    background:#E1E1E1
+}
+
+footer {
+    background:#1C2440;
+}
+#btn-language{
+    background-color: #1C2440;
+}
